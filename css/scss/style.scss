@@ -1,0 +1,122 @@
+/* Variables
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+$link: #fff;
+$hover: #ccc;
+$font: 'Montserrat', sans-serif;
+
+
+/* Shared
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+body{
+  font-family: $font;
+  font-weight: 400;
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-weight: 600;
+}
+
+h1{
+  margin-bottom: 1em;
+}
+
+section{
+  padding-top: 200px;
+  padding-bottom: 200px;
+  // border: 1px solid blue;
+}
+
+.container{
+  // border: 1px solid red;
+}
+
+.row{
+  // border: 1px solid yellow;
+}
+
+/* Navigation
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+nav{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 30px 0px;
+
+  ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+      li{
+        display: inline-block;
+
+        a{
+          padding: 30px;
+          color: $link;
+          text-decoration: none;
+
+          &:hover{
+            color: $hover;
+          }
+        }
+    }
+  }
+}
+
+/* Section: Who We Are
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+#who-we-are{
+  background-size: contain;
+  background: url('../img/bg_who_we_are.jpg') no-repeat center center;
+  color: #fff;
+}
+
+/* Section: What We Do
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+#what-we-do{
+  background: #ffd8d8;
+  .pointers{
+    h3{
+
+    }
+    h5{
+      font-weight: normal;
+      margin-bottom: 50px;
+    }
+  }
+}
+
+/* Section: Our Work
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+#our-works{
+  background: #bde5ff;
+}
+
+/* Section: How We Do It
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+#how-we-do-it{
+  background: #d3d3d3;
+    #image-half{
+      background: #eee;
+    }
+}
+
+/* Section: The Team
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+#the-team{
+  background: #ffd8d8;
+}
+
+/* Section: Join Us
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+#join-us{
+  background: pink;
+  .half-image{
+    background: url('../img/bg_join_us.jpg') no-repeat;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: red;
+  }
+}
