@@ -3,27 +3,36 @@
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 /* Shared
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+* {
+  margin: 0;
+  padding: 0; }
+
 body {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400; }
+  font-weight: 400;
+  font-family: 'Lora', serif; }
 
 h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
   font-weight: 600; }
 
 h1 {
   margin-bottom: 1em; }
 
 section {
+  position: relative;
   padding-top: 200px;
-  padding-bottom: 200px; }
+  padding-bottom: 200px;
+  z-index: 1; }
 
 /* Navigation
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 nav {
+  font-family: 'Montserrat', sans-serif;
   position: fixed;
   top: 0;
   width: 100%;
-  padding: 30px 0px; }
+  padding: 30px 0px;
+  z-index: 2; }
   nav ul {
     list-style-type: none;
     margin: 0;
@@ -44,25 +53,39 @@ nav {
   background-size: contain;
   background: url("../img/bg_who_we_are.jpg") no-repeat center center;
   color: #fff; }
+  #who-we-are p {
+    font-size: 2em;
+    font-style: italic; }
 
 /* Section: What We Do
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 #what-we-do {
   background: #ffd8d8; }
-  #what-we-do .pointers h5 {
-    font-weight: normal;
-    margin-bottom: 50px; }
+  #what-we-do .image-right {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50%;
+    background: url("../img/bg_join_us.jpg") no-repeat center center;
+    height: 1080px;
+    clear: both; }
+  #what-we-do .pointers {
+    margin-bottom: 30px; }
+    #what-we-do .pointers h4 {
+      margin-bottom: 10px; }
+    #what-we-do .pointers p {
+      font-size: 1.2em; }
 
-/* Section: Our Work
+/* Section: Products
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-#our-works {
+#products {
   background: #bde5ff; }
 
 /* Section: How We Do It
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-#how-we-do-it {
+#our-approach {
   background: #d3d3d3; }
-  #how-we-do-it #image-half {
+  #our-approach #image-half {
     background: #eee; }
 
 /* Section: The Team
@@ -74,10 +97,12 @@ nav {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 #join-us {
   background: pink; }
-  #join-us .half-image {
-    background: url("../img/bg_join_us.jpg") no-repeat;
-    top: 0;
+  #join-us .image-left {
+    overflow: hidden;
+    position: absolute;
     left: 0;
+    top: 0;
     width: 50%;
-    height: 100%;
-    background: red; }
+    background: url("../img/bg_join_us.jpg") no-repeat center center;
+    height: 1080px;
+    clear: both; }

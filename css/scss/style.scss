@@ -2,17 +2,22 @@
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 $link: #fff;
 $hover: #ccc;
-$font: 'Montserrat', sans-serif;
 
 
 /* Shared
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+*{
+  margin: 0;
+  padding: 0;
+}
+
 body{
-  font-family: $font;
   font-weight: 400;
+  font-family: 'Lora', serif;
 }
 
 h1,h2,h3,h4,h5,h6{
+  font-family: 'Montserrat', sans-serif;
   font-weight: 600;
 }
 
@@ -21,8 +26,10 @@ h1{
 }
 
 section{
+  position: relative;
   padding-top: 200px;
   padding-bottom: 200px;
+  z-index: 1;
   // border: 1px solid blue;
 }
 
@@ -37,10 +44,12 @@ section{
 /* Navigation
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 nav{
+  font-family: 'Montserrat', sans-serif;
   position: fixed;
   top: 0;
   width: 100%;
   padding: 30px 0px;
+  z-index: 2;
 
   ul{
     list-style-type: none;
@@ -69,32 +78,47 @@ nav{
   background-size: contain;
   background: url('../img/bg_who_we_are.jpg') no-repeat center center;
   color: #fff;
+
+  p{
+    font-size: 2em;
+    font-style: italic;
+  }
 }
 
 /* Section: What We Do
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 #what-we-do{
   background: #ffd8d8;
-  .pointers{
-    h3{
 
+  .image-right{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50%;
+    background: url('../img/bg_join_us.jpg') no-repeat center center;
+    height: 1080px; //TOFIX
+    clear: both;
+  }
+  .pointers{
+    margin-bottom: 30px;
+    h4{
+      margin-bottom: 10px;
     }
-    h5{
-      font-weight: normal;
-      margin-bottom: 50px;
+    p{
+      font-size: 1.2em;
     }
   }
 }
 
-/* Section: Our Work
+/* Section: Products
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-#our-works{
+#products{
   background: #bde5ff;
 }
 
 /* Section: How We Do It
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-#how-we-do-it{
+#our-approach{
   background: #d3d3d3;
     #image-half{
       background: #eee;
@@ -111,12 +135,14 @@ nav{
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 #join-us{
   background: pink;
-  .half-image{
-    background: url('../img/bg_join_us.jpg') no-repeat;
-    top: 0;
+  .image-left{
+    overflow: hidden;
+    position: absolute;
     left: 0;
+    top: 0;
     width: 50%;
-    height: 100%;
-    background: red;
+    background: url('../img/bg_join_us.jpg') no-repeat center center;
+    height: 1080px; //TOFIX
+    clear: both;
   }
 }
