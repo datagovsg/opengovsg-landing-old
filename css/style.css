@@ -34,24 +34,29 @@ nav {
   position: fixed;
   top: 0;
   width: 100%;
-  padding: 30px 0px;
-  z-index: 2; }
+  z-index: 2;
+  background: #fff; }
   nav ul {
     list-style-type: none;
     margin: 0;
-    padding: 0;
-    text-align: center; }
+    text-align: center;
+    height: auto; }
     nav ul li {
-      display: inline-block; }
+      display: inline-block;
+      padding: 10px;
+      margin: 0; }
       nav ul li a {
-        padding: 30px;
         color: #000;
-        text-decoration: none; }
+        text-decoration: none;
+        padding: 30px; }
         nav ul li a:hover {
           color: #666; }
 
 /* Section: What if
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+#what-if {
+  background: #ffd8d8; }
+
 /* Section: Who We Are
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 #intro {
@@ -86,6 +91,22 @@ nav {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 /* Section: The Team
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+#who-we-are .name {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif; }
+
+#who-we-are .role {
+  text-align: center;
+  margin-bottom: 20px;
+  font-style: italic;
+  font-size: 0.9em; }
+
+@media (min-width: 550px) {
+  #who-we-are .columns {
+    margin-left: 0%; }
+  #who-we-are .three.columns {
+    width: 25%; } }
+
 /* Section: Join Us
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 #join-us .image-left {
