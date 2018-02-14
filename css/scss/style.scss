@@ -34,6 +34,7 @@ section{
 
 .container{
   // border: 1px solid red;
+    max-width: 1200px; //override skeleton 960px default
 }
 
 .row{
@@ -149,10 +150,13 @@ nav{
   }
 }
 
-/* Section: Products
+/* Section: Products We Make
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 #products-we-make{
   // background: #bde5ff;
+    h1{
+      text-align: center;
+    }
 
 }
 

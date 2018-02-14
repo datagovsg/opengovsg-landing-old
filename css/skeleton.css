@@ -31,7 +31,7 @@
 .container {
   position: relative;
   width: 100%;
-  /* max-width: 960px; */
+  max-width: 960px;
   margin: 0 auto;
   padding: 0 20px;
   box-sizing: border-box; }
@@ -266,7 +266,7 @@ input[type="url"]:focus,
 input[type="password"]:focus,
 textarea:focus,
 select:focus {
-  border: 1px solid #33C3F0;
+  border: 1px solid #3 3C3F0;
   outline: 0; }
 label,
 legend {
