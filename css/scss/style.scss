@@ -1,7 +1,8 @@
 /* Variables
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 $link: #000;
-$hover: #999;
+$hover: #777;
+$primary: #101f5a;
 
 
 /* Shared
@@ -23,16 +24,12 @@ h1,h2,h3,h4,h5,h6{
   font-weight: 600;
 }
 
-h1{
-  margin-bottom: 1em;
-}
 
 section{
   position: relative;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 100px;
+  padding-bottom: 100px;
   z-index: 1;
-  border-bottom: 1px solid #efefef;
 }
 
 .container{
@@ -65,7 +62,7 @@ nav{
         margin: 0; // to counter default style from Skeleton
 
         a{
-          color: $link;
+          color: $primary;
           text-decoration: none;
           padding: 0px 30px;
 
@@ -93,9 +90,21 @@ nav{
 #what-if{
   // background-size: contain;
   // background: url('../img/bg_what_if.jpg') no-repeat center center;
-  background: #ffd8d8;
 
+  background: url('../img/bg_what_if.jpg') no-repeat;
+  background-size: cover;
+  min-height: 400px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: stretch;
+  align-items: center;
 
+  .what-if-text{
+    flex: 0 1 auto;
+    align-self: auto;
+  }
 }
 
 /* Section: Who We Are
@@ -103,6 +112,7 @@ nav{
 #intro{
   background-size: contain;
   background: url('../img/bg_who_we_are.jpg') no-repeat center center;
+  text-align: center;
   h1,h2,{
     color: #fff;
   }
@@ -119,15 +129,17 @@ nav{
 #what-we-do{
   // background: #ffd8d8;
 
-  .image-right{
+  .image-left{
+    overflow: hidden;
     position: absolute;
-    right: 0;
+    left: 0;
     top: 0;
     width: 50%;
     background: url('../img/bg_join_us.jpg') no-repeat center center;
-    height: 1080px; //TOFIX
+    height: 100%;
     clear: both;
   }
+
   .pointers{
     margin-bottom: 30px;
     h4{
@@ -147,10 +159,17 @@ nav{
 /* Section: How We Do It
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 #how-we-do-it{
-  // background: #d3d3d3;
-    #image-half{
-      // background: #eee;
-    }
+  background: #e9e9e9;
+  .image-right{
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 33.3%;
+    background: url('../img/bg_join_us.jpg') no-repeat;
+    height: 100%;
+    clear: both;
+  }
 }
 
 /* Section: The Team
@@ -181,7 +200,7 @@ nav{
 /* Section: Join Us
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 #join-us{
-  // background: pink;
+  background: #e9e9e9;
   .image-left{
     overflow: hidden;
     position: absolute;
@@ -189,7 +208,13 @@ nav{
     top: 0;
     width: 50%;
     background: url('../img/bg_join_us.jpg') no-repeat center center;
-    height: 1000px; //TOFIX
+    height: 100%;
     clear: both;
   }
+}
+
+/* Footer
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+footer{
+  height: 200px;
 }
