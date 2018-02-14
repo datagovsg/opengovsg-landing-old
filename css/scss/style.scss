@@ -1,7 +1,7 @@
 /* Variables
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 $link: #000;
-$hover: #666;
+$hover: #999;
 
 
 /* Shared
@@ -63,10 +63,11 @@ nav{
         display: inline-block;
         padding: 10px;
         margin: 0; // to counter default style from Skeleton
+
         a{
           color: $link;
           text-decoration: none;
-          padding: 30px;
+          padding: 0px 30px;
 
           &:hover{
               color: $hover;
