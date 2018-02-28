@@ -17,7 +17,7 @@
   <!-- FONT
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href="css/normalize.css">
@@ -77,21 +77,26 @@
   </section>
 
   <section id="what-we-do">
+    <div class="image-left"></div>
     <div class="container">
       <div class="row">
-        <div class="seven columns">
+        <div class="five columns offset-by-seven">
           <h1>What We Do</h1>
-          <h4>We solve real problems.</h4>
-          <p> Work on meaningful projects from transport to healthcare to how public servants collaborate and how citizens interact with the government. Don’t waste skills building another shopping cart. </p>
-          <h4>We build for the users.</h4>
-          <p> Develop products for public good, for the citizens. Not for download numbers, not for KPI, not for our Bosses, Ministers, Perm Secs, Directors, CEO etc. </p>
-          <h4>We push for change.</h4>
-          <p> Government IT systems need not take years to build. They need not be million dollars ITQ. Challenge the status quo one red tape at a time. We start small, do it well and iterate continuously. </p>
+          <div class="content-block">
+            <h4>We solve real problems.</h4>
+            <p> Work on meaningful projects from transport to healthcare. Improve the way government engages with the citizens. Don’t waste your skills building another shopping cart. </p>
+          </div>
+          <div class="content-block">
+            <h4>We build for the users.</h4>
+            <p> Develop products for public good. Not for download numbers, not for KPI, not for our Bosses, Ministers, Perm Secs, Directors, CEO etc. </p>
+          </div>
+          <div class="content-block">
+            <h4>We push for change.</h4>
+            <p> Government IT systems need not take years to build. They need not be million dollars ITQ. Challenge the status quo one red tape at a time. We start small, do it well and iterate continuously. </p>
+          </div>
         </div>
-
       </div>
     </div>
-    <div class="image-right"></div>
   </section>
 
 
@@ -100,80 +105,64 @@
   <section id="products-we-make">
     <div class="container">
       <h1>Products We Make</h1>
-      <div class="row project">
+      <div id="beeline" class="project row">
         <div class="six columns">
           <img class="u-max-full-width" src="img/project_placeholder.png">
         </div>
         <div class="six columns">
-          <h3>Beeline.sg</h3>
+          <h4>Beeline.sg</h4>
           <p>Beeline is a data-driven shuttle bus platform that empowers commuters to co-create routes to meet their travel needs. Bus routes are created from user suggestions and public transport usage data, and users book and pay for rides using a mobile
-            app.
-            </p>
-            <div class="project-links">
-              <a href=""> Visit Website</a> <a href=""> View Github</a>
-            </div>
+            app. Beeline went live on Aug 2015. To date, 250+ routes are live, with 8,000+ users having travelled on the platform.</p>
         </div>
       </div>
-      <div class="row project">
+      <div id="datagov" class="project row">
         <div class="six columns">
           <img class="u-max-full-width" src="img/project_placeholder.png">
         </div>
         <div class="six columns">
-          <h3>Data.gov.sg</h3>
+          <h4>Data.gov.sg</h4>
           <p>Data.gov.sg is a one-stop portal for all publicly available government dataset. The site goes beyond being a data repository, and aims to make government data relevant and understandable to the public, through the active use of charts and articles.
-            </p>
-            <div class="project-links">
-              <a href=""> Visit Website</a> <a href=""> Read Blog</a>
-            </div>
+            There are more than 1,200 datasets available, with around 900,000 users visiting the site in 2017.</p>
         </div>
       </div>
-      <div class="row project">
+      <div id="formssg" class="project row">
         <div class="six columns">
           <img class="u-max-full-width" src="img/project_placeholder.png">
         </div>
         <div class="six columns">
-          <h3>Forms.sg</h3>
-          <p>FormSG is a form builder tool for agencies to self-service and create online forms that capture classified data, with the goal of replacing paper forms. </p>
-          <div class="project-links">
-          <a href=""> Visit Website</a>
-          </div>
+          <h4>Forms.sg</h4>
+          <p>FormSG is a form builder tool for agencies to self-service and create online forms that capture classified data, with the goal of replacing paper forms. It has been in prototype phase since Aug 2017, but has already been deployed by MOE, MOF,
+            PA, MOM, MFA, PGO and MSO, and garnered interest from more than 15 other agencies.</p>
         </div>
       </div>
-      <div class="row project">
+      <div id="parkingsg" class="project row">
         <div class="six columns">
           <img class="u-max-full-width" src="img/project_placeholder.png">
         </div>
         <div class="six columns">
-          <h3>Parking.sg</h3>
-          <p>Parking.SG is a mobile app alternative to parking coupons. Data collected from the app may open up possible evidence-based car park planning and management policy.
-            <div class="project-links">
-            <a href=""> Download App</a> <a href=""> Visit Website</a>
-            </div>
+          <h4>Parking.sg</h4>
+          <p>Parking.SG is a mobile app alternative to parking coupons. Data collected from the app may open up possible evidence-based car park planning and management policy. It went live in Oct 2017 and has been downloaded more than 380,000 times.
         </div>
-      </div>
-      <div id="brew">
-        <p>And brewing many other prototypes between these projects and during our hackathons</p>
       </div>
     </div>
   </section>
 
   <!-- Section: How We Do It-->
   <section id="how-we-do-it">
-    <div class="image-left"></div>
     <div class="container">
       <div class="row">
-        <div class="seven columns offset-by-five">
+        <div class="five columns">
           <h1>How We Do It</h1>
-          <div>
+          <div class="content-block">
             <h4>Design</h4>
             <p>We identify areas in the public space where technology can help and build prototypes to show it.
             </p>
           </div>
-          <div>
+          <div class="content-block">
             <h4>Evangelise</h4>
             <p>We present prototypes to stakeholders and other government agencies and persuade them to test the idea.</p>
           </div>
-          <div >
+          <div class="content-block">
             <h4>Implement</h4>
             <p>We pilot ideas and build them out if the tested prototypes are beneficial for the citizens.
             </p>
@@ -181,6 +170,8 @@
 
       </div>
     </div>
+    </div>
+    <div class="image-right"></div>
   </section>
 
   <!-- Section: The Team or who we are-->
@@ -301,6 +292,8 @@
   <!-- End Document
 
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+  <script type="text/javascript" src="js/nav.js"></script>
 </body>
 
 </html>
