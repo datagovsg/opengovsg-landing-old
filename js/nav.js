@@ -20,3 +20,11 @@ $(document).ready(function () {
   });
 
 });
+
+$('#mobile-menu').on('click', function () {
+     $('.menu').toggleClass('open');
+   });
+
+$('.menu li').on('click', function () {
+    $('.menu').removeClass('open');
+ });
