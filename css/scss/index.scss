@@ -1,0 +1,125 @@
+// Variables
+// -----------------------------------------------------------------------------
+
+// Colors
+$background-color: #FFF;
+$text-color: #333;
+$inverse-background-color: #000;
+$inverse-text-color: #DDD;
+
+// Sizes
+$space: 5rem;
+$large-space: $space * 2;
+
+// Fonts
+$body-font-family: 'Nunito', sans-serif;
+$body-font-weight: 400;
+$body-font-size: 18px;
+$header-font-family: 'Montserrat', sans-serif;
+$header-font-weight: 600;
+
+
+// General
+// -----------------------------------------------------------------------------
+body {
+  background: $background-color;
+  color: $text-color;
+  font-size: $body-font-size;
+  font-weight: $body-font-weight;
+  font-family: $body-font-family;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $header-font-family;
+  font-weight: $header-font-weight;
+}
+
+section {
+  // Position
+  position: relative;
+  // Size
+  padding-top: $large-space;
+  padding-bottom: $large-space;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: $space;
+}
+
+
+// Components
+// -----------------------------------------------------------------------------
+
+#introduction {
+  // Appearance
+  background-image: url('../img/bg_what_if.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: $inverse-text-color;
+  // Children
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: $inverse-background-color;
+    opacity: 0.8;
+  }
+}
+
+
+#what-we-do {
+  // Children
+  &::before {
+    content: "";
+    // Position
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 50%;
+    // Display
+    display: none;
+    @media (min-width: 550px) { display: block; }
+    // Appearance
+    background-image: url('../img/bg_join_us.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  p {
+    margin-bottom: $space;
+    &:last-child { margin-bottom: 0; }
+  }
+}
+
+#things-weve-made {
+  #see-more-stuff {
+    margin-top: $space;
+    float: right;
+  }
+}
+
+#how-we-do-it {
+  &::before {
+    content: "";
+    // Position
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    right: 0;
+    // Display
+    display: none;
+    @media (min-width: 550px) { display: block; }
+    // Appearance
+    background-image: url('../img/bg_how_we_do_it.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}

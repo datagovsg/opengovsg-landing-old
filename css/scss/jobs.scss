@@ -1,0 +1,63 @@
+  .desc{
+    font-style: italic;
+  }
+
+
+#quote{
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    // background: #EDEDED;
+
+    .featured-photo{
+      width: 40%;
+
+    }
+
+  blockquote {
+    font-size: 1.2em;
+    width: 60%;
+    font-style: italic;
+    color: #555555;
+    padding: 3em;
+    padding-top: 5em;
+    line-height: 1.6;
+    position: relative;
+    z-index: 3;
+    float: right;
+
+
+    &::before {
+      font-family: Arial;
+      content: "\201C";
+      color: #aaa;
+      font-size: 10em;
+      position: absolute;
+      left: 0px;
+      top: -60px;
+      z-index: -1;
+    }
+
+    &::after {
+      content: ''; }
+
+    & span {
+      display: block;
+      color: #333333;
+      font-style: normal;
+      font-weight: bold;
+      margin-top: 1em;
+      text-align: right; }
+  }
+}
+
+
+#doing-what{
+  margin-bottom: 100px;
+}
+
+#apply{
+  margin: 100px 0;
+  text-align: center;
+}

@@ -1,0 +1,77 @@
+body {
+  background: #FFF;
+  color: #333;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Nunito", sans-serif; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600; }
+
+section {
+  position: relative;
+  padding-top: 10rem;
+  padding-bottom: 10rem; }
+
+.section-header {
+  text-align: center;
+  margin-bottom: 5rem; }
+
+#introduction {
+  background-image: url("../img/bg_what_if.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: #DDD; }
+  #introduction::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #000;
+    opacity: 0.8; }
+
+#what-we-do::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 50%;
+  display: none;
+  background-image: url("../img/bg_join_us.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
+  @media (min-width: 550px) {
+    #what-we-do::before {
+      display: block; } }
+#what-we-do p {
+  margin-bottom: 5rem; }
+  #what-we-do p:last-child {
+    margin-bottom: 0; }
+
+#things-weve-made #see-more-stuff {
+  margin-top: 5rem;
+  float: right; }
+
+#how-we-do-it::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  right: 0;
+  display: none;
+  background-image: url("../img/bg_how_we_do_it.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
+  @media (min-width: 550px) {
+    #how-we-do-it::before {
+      display: block; } }
+
+/*# sourceMappingURL=index.css.map */
