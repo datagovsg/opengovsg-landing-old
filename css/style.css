@@ -1,18 +1,10 @@
 @charset "UTF-8";
-/* Variables
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-/* Shared
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-* {
-  margin: 0;
-  padding: 0; }
-
 body {
-  font-weight: 400;
-  font-family: 'Nunito', sans-serif;
-  font-size: 18px;
   background: #fff;
-  color: #333; }
+  color: #333;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: 'Nunito', sans-serif; }
 
 h1,
 h2,
@@ -24,78 +16,25 @@ h6 {
   font-weight: 600; }
 
 section {
-  position: relative;
-  z-index: 1;
-  padding-top: 100px;
-  padding-bottom: 100px; }
-
-.container {
-  max-width: 1200px; }
+  position: relative; }
 
 .content-block {
   margin: 50px 0; }
 
-/* Navigation
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-nav {
-  font-family: 'Montserrat', sans-serif;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background: #fff;
-  height: 60px;
-  line-height: 60px;
-  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
-  z-index: 9998;
-  transition: all 0.5s; }
-  nav.scrollUp {
-    transform: translateY(-60px); }
-  nav ul {
-    list-style-type: none;
-    margin: 0;
-    text-align: center;
-    height: auto; }
-    nav ul li {
-      display: inline-block;
-      background-color: #fff;
-      margin: 0; }
-      nav ul li a {
-        color: #226db9;
-        text-decoration: none;
-        margin: 0 30px; }
-        nav ul li a:hover,
-        nav ul li a :visited {
-          color: #145495; }
-  nav #mobile-menu {
-    display: none;
-    background: url("../img/menu.svg") no-repeat;
-    border: none;
-    float: right;
-    cursor: pointer;
-    height: 60px;
-    width: 60px;
-    margin: 0; }
-
-/* Mobile Navigation
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-@media (max-width: 768px) {
-  nav #mobile-menu {
-    display: block; }
-  nav li {
+#introduction {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #DDD; }
+  #introduction::before {
+    content: "";
+    position: absolute;
     width: 100%;
-    border: 1px solid #eee; }
-  nav .menu {
-    /* Hides the menu */
-    height: 0;
-    overflow: hidden;
-    transition: height 0.3s;
-    clear: both; }
-  nav .open {
-    height: 400px; } }
+    height: 100%;
+    background-color: #000;
+    opacity: 0.8; }
 
-/* Section: What if
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
 #what-if {
   padding-top: 100px;
   padding-bottom: 100px;
@@ -118,7 +57,6 @@ nav {
   background-size: contain;
   background: url("../img/bg_who_we_are.jpg") no-repeat center center;
   text-align: center; }
-  #intro,
   #intro h1,
   #intro h2 {
     color: #fff; }
@@ -138,11 +76,9 @@ nav {
   background: url("../img/bg_join_us.jpg") no-repeat center center;
   height: 100%;
   clear: both; }
-
 @media (max-width: 768px) {
   #what-we-do .image-left {
     display: none; } }
-
 #what-we-do .pointers {
   margin-bottom: 30px; }
   #what-we-do .pointers h4 {
@@ -190,13 +126,11 @@ nav {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 #who-we-are .name {
   text-align: center; }
-
 #who-we-are .role {
   text-align: center;
   margin-bottom: 30px;
   font-style: italic;
   font-size: 0.9em; }
-
 @media (min-width: 550px) {
   #who-we-are .columns {
     margin-left: 0; }
@@ -291,3 +225,5 @@ nav {
   line-height: 60px;
   font-size: 16px;
   padding: 0px 100px; }
+
+/*# sourceMappingURL=style.css.map */
