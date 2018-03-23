@@ -10,6 +10,7 @@ $inverse-text-color: #DDD;
 // Sizes
 $space: 5rem;
 $large-space: $space * 2;
+$small-space: $space / 2;
 
 // Fonts
 $body-font-family: 'Nunito', sans-serif;
@@ -47,6 +48,9 @@ section {
   margin-bottom: $space;
 }
 
+.container{
+  max-width: 1200px;
+}
 
 // Components
 // -----------------------------------------------------------------------------
@@ -91,18 +95,24 @@ section {
     background-position: center;
     background-size: cover;
   }
+
   p {
     margin-bottom: $space;
     &:last-child { margin-bottom: 0; }
   }
 }
 
-#things-weve-made {
-  #see-more-stuff {
+#stuff-we-work-on{
+  .row{
+    margin-bottom: $space;
+    &:last-child { margin-bottom: 0; }
+  }
+  #see-more-work {
     margin-top: $space;
     float: right;
   }
 }
+
 
 #how-we-do-it {
   &::before {
@@ -122,4 +132,28 @@ section {
     background-position: center;
     background-size: cover;
   }
+
+  h2{
+    margin-bottom: $space;
+  }
+
+  .pointers{
+    margin-bottom: $space;
+    &:last-child { margin-bottom: 0; }
+
+    h3{
+      font-size: 2.5rem;
+    }
+  }
+}
+
+#join-us{
+  .column
+  {
+    .content{
+      padding-top: $small-space;
+      padding-bottom: $small-space;
+    }
+  }
+
 }

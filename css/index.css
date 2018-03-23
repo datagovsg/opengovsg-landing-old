@@ -18,6 +18,9 @@ section {
   text-align: center;
   margin-bottom: 5rem; }
 
+.container {
+  max-width: 1200px; }
+
 #introduction {
   background-image: url("../img/bg_what_if.jpg");
   background-repeat: no-repeat;
@@ -49,12 +52,18 @@ section {
   @media (min-width: 550px) {
     #what-we-do::before {
       display: block; } }
+
 #what-we-do p {
   margin-bottom: 5rem; }
   #what-we-do p:last-child {
     margin-bottom: 0; }
 
-#things-weve-made #see-more-stuff {
+#stuff-we-work-on .row {
+  margin-bottom: 5rem; }
+  #stuff-we-work-on .row:last-child {
+    margin-bottom: 0; }
+
+#stuff-we-work-on #see-more-work {
   margin-top: 5rem;
   float: right; }
 
@@ -74,4 +83,16 @@ section {
     #how-we-do-it::before {
       display: block; } }
 
-/*# sourceMappingURL=index.css.map */
+#how-we-do-it h2 {
+  margin-bottom: 5rem; }
+
+#how-we-do-it .pointers {
+  margin-bottom: 5rem; }
+  #how-we-do-it .pointers:last-child {
+    margin-bottom: 0; }
+  #how-we-do-it .pointers h3 {
+    font-size: 2.5rem; }
+
+#join-us .column .content {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem; }
