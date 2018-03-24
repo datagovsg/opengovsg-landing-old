@@ -9,6 +9,18 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Montserrat", sans-serif;
   font-weight: 600; }
 
+h3 {
+  font-size: 2.5rem; }
+
+h4 {
+  font-size: 2.0rem; }
+
+h5 {
+  font-size: 1.6rem; }
+
+h6 {
+  font-size: 1.2rem; }
+
 section {
   position: relative;
   padding-top: 10rem;
@@ -52,7 +64,6 @@ section {
   @media (min-width: 550px) {
     #what-we-do::before {
       display: block; } }
-
 #what-we-do p {
   margin-bottom: 5rem; }
   #what-we-do p:last-child {
@@ -62,7 +73,6 @@ section {
   margin-bottom: 5rem; }
   #stuff-we-work-on .row:last-child {
     margin-bottom: 0; }
-
 #stuff-we-work-on #see-more-work {
   margin-top: 5rem;
   float: right; }
@@ -82,17 +92,15 @@ section {
   @media (min-width: 550px) {
     #how-we-do-it::before {
       display: block; } }
-
 #how-we-do-it h2 {
   margin-bottom: 5rem; }
-
-#how-we-do-it .pointers {
+#how-we-do-it p {
   margin-bottom: 5rem; }
-  #how-we-do-it .pointers:last-child {
+  #how-we-do-it p:last-child {
     margin-bottom: 0; }
-  #how-we-do-it .pointers h3 {
-    font-size: 2.5rem; }
 
 #join-us .column .content {
   padding-top: 2.5rem;
   padding-bottom: 2.5rem; }
+
+/*# sourceMappingURL=index.css.map */
