@@ -75,7 +75,7 @@ section {
     left: 0;
     right: 0;
     background-color: $inverse-background-color;
-    opacity: 0.7;
+    opacity: 0.6;
   }
 }
 
@@ -111,10 +111,6 @@ section {
     margin-bottom: $space;
     &:last-child { margin-bottom: 0; }
 
-    .column{
-      padding: $small-space;
-
-    }
   }
   h3{
     margin-top: $small-space;
