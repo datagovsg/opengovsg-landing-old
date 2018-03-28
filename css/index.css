@@ -74,6 +74,8 @@ section {
   margin-bottom: 5rem; }
   #stuff-we-work-on .row:last-child {
     margin-bottom: 0; }
+  #stuff-we-work-on .row .column {
+    padding: 2.5rem; }
 
 #stuff-we-work-on h3 {
   margin-top: 2.5rem; }

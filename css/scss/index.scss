@@ -110,6 +110,11 @@ section {
   .row{
     margin-bottom: $space;
     &:last-child { margin-bottom: 0; }
+
+    .column{
+      padding: $small-space;
+
+    }
   }
   h3{
     margin-top: $small-space;
