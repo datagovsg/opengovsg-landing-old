@@ -21,6 +21,9 @@ h5 {
 h6 {
   font-size: 1.2rem; }
 
+.container {
+  max-width: 1200px; }
+
 section {
   position: relative;
   padding-top: 10rem;
@@ -30,11 +33,8 @@ section {
   text-align: center;
   margin-bottom: 5rem; }
 
-.container {
-  max-width: 1200px; }
-
 #introduction {
-  background-image: url("../img/bg_what_if.jpg");
+  background-image: url("../img/bg_what_if.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -47,7 +47,7 @@ section {
     left: 0;
     right: 0;
     background-color: #000;
-    opacity: 0.8; }
+    opacity: 0.6; }
 
 #what-we-do::before {
   content: "";
@@ -57,13 +57,14 @@ section {
   left: 0;
   right: 50%;
   display: none;
-  background-image: url("../img/bg_join_us.jpg");
+  background-image: url("../img/bg_what_we_do.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover; }
   @media (min-width: 550px) {
     #what-we-do::before {
       display: block; } }
+
 #what-we-do p {
   margin-bottom: 5rem; }
   #what-we-do p:last-child {
@@ -73,6 +74,10 @@ section {
   margin-bottom: 5rem; }
   #stuff-we-work-on .row:last-child {
     margin-bottom: 0; }
+
+#stuff-we-work-on h3 {
+  margin-top: 2.5rem; }
+
 #stuff-we-work-on #see-more-work {
   margin-top: 5rem;
   float: right; }
@@ -85,15 +90,17 @@ section {
   left: 50%;
   right: 0;
   display: none;
-  background-image: url("../img/bg_how_we_do_it.jpg");
+  background-image: url("../img/bg_how_we_do_it.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover; }
   @media (min-width: 550px) {
     #how-we-do-it::before {
       display: block; } }
+
 #how-we-do-it h2 {
   margin-bottom: 5rem; }
+
 #how-we-do-it p {
   margin-bottom: 5rem; }
   #how-we-do-it p:last-child {
@@ -102,5 +109,3 @@ section {
 #join-us .column .content {
   padding-top: 2.5rem;
   padding-bottom: 2.5rem; }
-
-/*# sourceMappingURL=index.css.map */

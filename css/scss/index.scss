@@ -1,43 +1,7 @@
-// Variables
+@import 'common';
+
+// Index Page Style
 // -----------------------------------------------------------------------------
-
-// Colors
-$background-color: #FFF;
-$text-color: #333;
-$inverse-background-color: #000;
-$inverse-text-color: #DDD;
-
-// Sizes
-$space: 5rem;
-$large-space: $space * 2;
-$small-space: $space / 2;
-
-// Fonts
-$body-font-family: 'Nunito', sans-serif;
-$body-font-weight: 400;
-$body-font-size: 18px;
-$header-font-family: 'Montserrat', sans-serif;
-$header-font-weight: 600;
-
-
-// General
-// -----------------------------------------------------------------------------
-body {
-  background: $background-color;
-  color: $text-color;
-  font-size: $body-font-size;
-  font-weight: $body-font-weight;
-  font-family: $body-font-family;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: $header-font-family;
-  font-weight: $header-font-weight;
-}
-h3 { font-size: 2.5rem; }
-h4 { font-size: 2.0rem; }
-h5 { font-size: 1.6rem; }
-h6 { font-size: 1.2rem; }
 
 section {
   // Position
@@ -52,16 +16,12 @@ section {
   margin-bottom: $space;
 }
 
-.container{
-  max-width: 1200px;
-}
-
 // Components
 // -----------------------------------------------------------------------------
 
 #introduction {
   // Appearance
-  background-image: url('../img/bg_what_if.jpg');
+  background-image: url('../img/bg_what_if.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -75,7 +35,7 @@ section {
     left: 0;
     right: 0;
     background-color: $inverse-background-color;
-    opacity: 0.8;
+    opacity: 0.6;
   }
 }
 
@@ -94,7 +54,7 @@ section {
     display: none;
     @media (min-width: 550px) { display: block; }
     // Appearance
-    background-image: url('../img/bg_join_us.jpg');
+    background-image: url('../img/bg_what_we_do.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -110,6 +70,10 @@ section {
   .row{
     margin-bottom: $space;
     &:last-child { margin-bottom: 0; }
+
+  }
+  h3{
+    margin-top: $small-space;
   }
   #see-more-work {
     margin-top: $space;
@@ -131,7 +95,7 @@ section {
     display: none;
     @media (min-width: 550px) { display: block; }
     // Appearance
-    background-image: url('../img/bg_how_we_do_it.jpg');
+    background-image: url('../img/bg_how_we_do_it.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
