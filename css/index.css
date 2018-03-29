@@ -54,8 +54,8 @@ section {
   position: absolute;
   top: 0;
   bottom: 0;
-  left: 0;
-  right: 50%;
+  left: 50%;
+  right: 0;
   display: none;
   background-image: url("../img/bg_what_we_do.png");
   background-repeat: no-repeat;
@@ -87,8 +87,8 @@ section {
   position: absolute;
   top: 0;
   bottom: 0;
-  left: 50%;
-  right: 0;
+  left: 0;
+  right: 50%;
   display: none;
   background-image: url("../img/bg_how_we_do_it.png");
   background-repeat: no-repeat;
