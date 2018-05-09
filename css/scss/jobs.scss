@@ -2,21 +2,23 @@
 
 // Jobs Page Style
 // -----------------------------------------------------------------------------
+body  {
+  padding-top: $small-space;
+  padding-bottom: $small-space; 
+}
 
 section {
   padding-top: $small-space;
   padding-bottom: $small-space;
 }
 
+.container {
+  max-width: 800px;
+}
+
 // Components
 // -----------------------------------------------------------------------------
-#job-intro{
-  p{
-    font-style: italic;
-  }
-}
 #apply{
-  .row{
-    text-align: center;
-  }
+  text-align: center;
 }
+

@@ -21,8 +21,30 @@ h5 {
 h6 {
   font-size: 1.2rem; }
 
+p {
+  margin-bottom: 1em; }
+
+li {
+  margin-bottom: 0; }
+
 .container {
   max-width: 1200px; }
+
+.youtube-wrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden; }
+
+.youtube-wrapper iframe,
+.youtube-wrapper object,
+.youtube-wrapper embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
 
 section {
   position: relative;
@@ -32,6 +54,9 @@ section {
 .section-header {
   text-align: center;
   margin-bottom: 5rem; }
+
+header img {
+  margin: 20px 0; }
 
 #introduction {
   background-image: url("../img/bg_what_if.png");
@@ -49,26 +74,29 @@ section {
     background-color: #000;
     opacity: 0.6; }
 
-#what-we-do::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 50%;
-  right: 0;
-  display: none;
-  background-image: url("../img/bg_what_we_do.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover; }
-  @media (min-width: 550px) {
-    #what-we-do::before {
-      display: block; } }
-
-#what-we-do p {
-  margin-bottom: 5rem; }
-  #what-we-do p:last-child {
-    margin-bottom: 0; }
+#what-we-do {
+  background: #F3F3F3; }
+  #what-we-do::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    right: 0;
+    display: none;
+    background-image: url("../img/bg_what_we_do.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; }
+    @media (min-width: 550px) {
+      #what-we-do::before {
+        display: block; } }
+  #what-we-do h2 {
+    margin-bottom: 5rem; }
+  #what-we-do p {
+    margin-bottom: 5rem; }
+    #what-we-do p:last-child {
+      margin-bottom: 0; }
 
 #stuff-we-work-on .row {
   margin-bottom: 5rem; }
@@ -82,30 +110,35 @@ section {
   margin-top: 5rem;
   float: right; }
 
-#how-we-do-it::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 50%;
-  display: none;
-  background-image: url("../img/bg_how_we_do_it.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover; }
-  @media (min-width: 550px) {
-    #how-we-do-it::before {
-      display: block; } }
-
-#how-we-do-it h2 {
-  margin-bottom: 5rem; }
-
-#how-we-do-it p {
-  margin-bottom: 5rem; }
-  #how-we-do-it p:last-child {
-    margin-bottom: 0; }
+#how-we-work {
+  background: #F3F3F3; }
+  #how-we-work::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 50%;
+    display: none;
+    background-image: url("../img/bg_how_we_do_it.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; }
+    @media (min-width: 550px) {
+      #how-we-work::before {
+        display: block; } }
+  #how-we-work h2 {
+    margin-bottom: 5rem; }
+  #how-we-work p {
+    margin-bottom: 5rem; }
+    #how-we-work p:last-child {
+      margin-bottom: 0; }
 
 #join-us .column .content {
   padding-top: 2.5rem;
   padding-bottom: 2.5rem; }
+
+footer {
+  background-color: #F3F3F3; }
+  footer img {
+    margin: 20px 0; }
