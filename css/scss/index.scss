@@ -19,6 +19,12 @@ section {
 // Components
 // -----------------------------------------------------------------------------
 
+header{
+  img{
+    margin: 20px 0;
+  }
+}
+
 #introduction {
   // Appearance
   background-image: url('../img/bg_what_if.png');
@@ -41,6 +47,8 @@ section {
 
 
 #what-we-do {
+  // Appearance
+  background: $light-background-color;
   // Children
   &::before {
     content: "";
@@ -58,6 +66,10 @@ section {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+  }
+
+  h2{
+    margin-bottom: $space;
   }
 
   p {
@@ -82,7 +94,10 @@ section {
 }
 
 
-#how-we-do-it {
+#how-we-work {
+  // Appearance
+  background: $light-background-color;
+  // Children
   &::before {
     content: "";
     // Position
@@ -120,4 +135,11 @@ section {
     }
   }
 
+}
+
+footer{
+  background-color: $light-background-color;
+  img{
+    margin: 20px 0;
+  }
 }
