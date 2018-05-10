@@ -19,11 +19,7 @@ section {
 // Components
 // -----------------------------------------------------------------------------
 
-header{
-  img{
-    margin: 20px 0;
-  }
-}
+
 #introduction {
   // Appearance
   background-image: url('../img/bg_what_if.png');
@@ -133,21 +129,5 @@ header{
       padding-bottom: $small-space;
     }
   }
-
-}
-
-footer{
-  background-color: $light-background-color;
-  padding-top: $small-space;
-  padding-bottom: $small-space;
-
-    p{
-      font-size: $small-font-size;
-      color: #aaa;
-    }
-
-    img{
-      float: right;
-    }
 
 }
