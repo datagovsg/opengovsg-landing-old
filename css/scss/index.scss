@@ -7,8 +7,8 @@ section {
   // Position
   position: relative;
   // Size
-  padding-top: $large-space;
-  padding-bottom: $large-space;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
 }
 
 .section-header {
@@ -24,7 +24,6 @@ header{
     margin: 20px 0;
   }
 }
-
 #introduction {
   // Appearance
   background-image: url('../img/bg_what_if.png');
@@ -139,7 +138,16 @@ header{
 
 footer{
   background-color: $light-background-color;
-  img{
-    margin: 20px 0;
-  }
+  padding-top: $small-space;
+  padding-bottom: $small-space;
+
+    p{
+      font-size: $small-font-size;
+      color: #aaa;
+    }
+
+    img{
+      float: right;
+    }
+
 }
