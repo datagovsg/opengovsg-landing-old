@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:500");
+@import url("https://fonts.googleapis.com/css?family=Nunito");
 body {
   background: #FFF;
   color: #333;
@@ -7,7 +9,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Montserrat", sans-serif;
-  font-weight: 600; }
+  font-weight: 500; }
 
 h3 {
   font-size: 2.5rem; }
@@ -46,6 +48,24 @@ li {
   width: 100%;
   height: 100%; }
 
+header {
+  -webkit-box-shadow: 0px 2px 14px -2px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 2px 14px -2px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 2px 14px -2px rgba(0, 0, 0, 0.3); }
+  header img {
+    margin: 30px 0;
+    height: 45px; }
+
+footer {
+  background-color: #F3F3F3;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem; }
+  footer p {
+    font-size: 14px;
+    color: #aaa; }
+  footer img {
+    float: right; }
+
 section {
   position: relative;
   padding-top: 10rem;
@@ -71,60 +91,66 @@ section {
     background-color: #000;
     opacity: 0.6; }
 
-#what-we-do::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 50%;
-  right: 0;
-  display: none;
-  background-image: url("../img/bg_what_we_do.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover; }
-  @media (min-width: 550px) {
-    #what-we-do::before {
-      display: block; } }
-#what-we-do p {
-  margin-bottom: 5rem; }
-  #what-we-do p:last-child {
-    margin-bottom: 0; }
+#what-we-do {
+  background: #F3F3F3; }
+  #what-we-do::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    right: 0;
+    display: none;
+    background-image: url("../img/bg_what_we_do.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; }
+    @media (min-width: 550px) {
+      #what-we-do::before {
+        display: block; } }
+  #what-we-do h2 {
+    margin-bottom: 5rem; }
+  #what-we-do p {
+    margin-bottom: 5rem; }
+    #what-we-do p:last-child {
+      margin-bottom: 0; }
 
 #stuff-we-work-on .row {
   margin-bottom: 5rem; }
   #stuff-we-work-on .row:last-child {
     margin-bottom: 0; }
+
 #stuff-we-work-on h3 {
   margin-top: 2.5rem; }
+
 #stuff-we-work-on #see-more-work {
   margin-top: 5rem;
   float: right; }
 
-#how-we-do-it::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 50%;
-  display: none;
-  background-image: url("../img/bg_how_we_do_it.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover; }
-  @media (min-width: 550px) {
-    #how-we-do-it::before {
-      display: block; } }
-#how-we-do-it h2 {
-  margin-bottom: 5rem; }
-#how-we-do-it p {
-  margin-bottom: 5rem; }
-  #how-we-do-it p:last-child {
-    margin-bottom: 0; }
+#how-we-work {
+  background: #F3F3F3; }
+  #how-we-work::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 50%;
+    display: none;
+    background-image: url("../img/bg_how_we_do_it.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; }
+    @media (min-width: 550px) {
+      #how-we-work::before {
+        display: block; } }
+  #how-we-work h2 {
+    margin-bottom: 5rem; }
+  #how-we-work p {
+    margin-bottom: 5rem; }
+    #how-we-work p:last-child {
+      margin-bottom: 0; }
 
 #join-us .column .content {
   padding-top: 2.5rem;
   padding-bottom: 2.5rem; }
-
-/*# sourceMappingURL=index.css.map */

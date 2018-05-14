@@ -2,18 +2,25 @@
 
 // Jobs Page Style
 // -----------------------------------------------------------------------------
-body  {
-  padding-top: $small-space;
-  padding-bottom: $small-space; 
+header{
+  margin-bottom: $space;
 }
 
 section {
   padding-top: $small-space;
   padding-bottom: $small-space;
+  .container{
+    max-width: 720px;
+  }
 }
 
-.container {
-  max-width: 800px;
+h3{
+  font-size: 1.8rem;
+  margin-top: $space;
+}
+
+footer{
+  margin-top: $space;
 }
 
 // Components
@@ -21,4 +28,3 @@ section {
 #apply{
   text-align: center;
 }
-
