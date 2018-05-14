@@ -87,14 +87,21 @@ footer{
   background-color: $light-background-color;
   padding-top: $small-space;
   padding-bottom: $small-space;
-
+  
     p{
       font-size: $small-font-size;
       color: #aaa;
+      float: left;
     }
 
     img{
-      float: right;
+      float: left;
+    }
+
+    a{
+      text-decoration: none;
+      font-size: $small-font-size;
+      color: #333;
     }
 
 }
