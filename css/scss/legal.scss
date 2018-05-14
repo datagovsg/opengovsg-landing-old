@@ -1,0 +1,45 @@
+@import 'common'; // Legal Page Style
+// -----------------------------------------------------------------------------
+
+header {
+  margin-bottom: $space;
+}
+
+section {
+  padding-top: $small-space;
+  padding-bottom: $small-space;
+
+  .container {
+    max-width: 720px;
+  }
+}
+
+footer {
+  margin-top: $space;
+}
+
+
+.legal {
+  h1{
+    font-size: 4rem;
+  }
+  h2{
+    font-size: 2.5rem;
+    margin-top: $space;
+    margin-left: -1em;
+  }
+  ol{
+    margin-left: 2em;
+    ol{
+      font-size: 100%; //reset skeleton style
+    }
+  }
+  li {
+    text-indent: -1.2em;
+    margin-bottom: $small-space;
+
+      li{
+        margin-bottom: $small-space/2;
+      }
+  }
+}
