@@ -7,8 +7,8 @@ section {
   // Position
   position: relative;
   // Size
-  padding-top: $large-space;
-  padding-bottom: $large-space;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
 }
 
 .section-header {
@@ -19,11 +19,6 @@ section {
 // Components
 // -----------------------------------------------------------------------------
 
-header{
-  img{
-    margin: 20px 0;
-  }
-}
 
 #introduction {
   // Appearance
@@ -135,11 +130,4 @@ header{
     }
   }
 
-}
-
-footer{
-  background-color: $light-background-color;
-  img{
-    margin: 20px 0;
-  }
 }
