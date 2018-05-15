@@ -72,6 +72,7 @@ li {
   height: 100%;
 }
 
+// header
 header{
   -webkit-box-shadow: 0px 2px 14px -2px rgba(0,0,0,.3);
   -moz-box-shadow: 0px 2px 14px -2px rgba(0,0,0,.3);
@@ -83,20 +84,12 @@ header{
   }
 }
 
+// footer
 footer{
   background-color: $light-background-color;
   padding-top: $small-space;
   padding-bottom: $small-space;
 
-    p{
-      font-size: $small-font-size;
-      color: #aaa;
-      float: left;
-    }
-
-    img{
-      float: left;
-    }
 
     a{
       text-decoration: none;
@@ -133,5 +126,20 @@ footer{
         @media (min-width: 550px){
 
         }
+    }
+}
+
+//logo
+
+#logo{
+
+margin: $small-space 0;
+    a{
+      font-family: $header-font-family;
+      font-weight: $header-font-weight;
+      color: $inverse-background-color;
+      text-decoration: none;
+      font-size: 2.8rem;
+      line-height: 2.5rem;
     }
 }
