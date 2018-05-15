@@ -67,7 +67,27 @@ footer {
   footer a {
     text-decoration: none;
     font-size: 14px;
-    color: #333; }
+    color: #999; }
+  footer .footer-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center; }
+    @media (min-width: 550px) {
+      footer .footer-container {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: flex-end; } }
+  footer .right {
+    margin-top: 1.25rem; }
+    footer .right a {
+      margin-right: 1.25rem; }
+    @media (min-width: 550px) {
+      footer .right {
+        text-align: right;
+        margin-top: 0; } }
 
 section {
   position: relative;

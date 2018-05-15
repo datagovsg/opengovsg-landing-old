@@ -87,7 +87,7 @@ footer{
   background-color: $light-background-color;
   padding-top: $small-space;
   padding-bottom: $small-space;
-  
+
     p{
       font-size: $small-font-size;
       color: #aaa;
@@ -101,7 +101,37 @@ footer{
     a{
       text-decoration: none;
       font-size: $small-font-size;
-      color: #333;
+      color: #999;
     }
 
+    .footer-container{
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: center;
+      align-items: center;
+      @media (min-width: 550px){
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: flex-end;
+      }
+    }
+    .right{
+      margin-top: $small-space/2;
+
+      a{
+        margin-right: $small-space/2;
+      }
+      @media (min-width: 550px){
+        text-align: right;
+        margin-top: 0
+      }
+    }
+
+    .left{
+        @media (min-width: 550px){
+
+        }
+    }
 }
