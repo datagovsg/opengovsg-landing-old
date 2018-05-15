@@ -58,12 +58,6 @@ footer {
   background-color: #F3F3F3;
   padding-top: 2.5rem;
   padding-bottom: 2.5rem; }
-  footer p {
-    font-size: 14px;
-    color: #aaa;
-    float: left; }
-  footer img {
-    float: left; }
   footer a {
     text-decoration: none;
     font-size: 14px;
@@ -88,6 +82,16 @@ footer {
       footer .right {
         text-align: right;
         margin-top: 0; } }
+
+#logo {
+  margin: 2.5rem 0; }
+  #logo a {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #000;
+    text-decoration: none;
+    font-size: 2.8rem;
+    line-height: 2.5rem; }
 
 header {
   margin-bottom: 5rem; }
