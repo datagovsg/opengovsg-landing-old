@@ -122,19 +122,31 @@ section {
   background: #F3F3F3; }
   #what-we-do::before {
     content: "";
-    position: absolute;
+    position: relative;
     top: 0;
-    bottom: 0;
-    left: 50%;
+    bottom: auto;
+    left: 0;
     right: 0;
-    display: none;
+    margin-top: -10rem;
+    margin-bottom: 5rem;
+    height: 100vh;
+    max-height: 60vw;
+    display: block;
     background-image: url("../img/bg_what_we_do.png");
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center 30%;
     background-size: cover; }
     @media (min-width: 550px) {
       #what-we-do::before {
-        display: block; } }
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 50%;
+        right: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+        height: auto;
+        max-height: 100%; } }
   #what-we-do h2 {
     margin-bottom: 5rem; }
   #what-we-do p {
@@ -146,10 +158,8 @@ section {
   margin-bottom: 5rem; }
   #stuff-we-work-on .row:last-child {
     margin-bottom: 0; }
-
 #stuff-we-work-on h3 {
   margin-top: 2.5rem; }
-
 #stuff-we-work-on #see-more-work {
   margin-top: 5rem;
   float: right; }
@@ -158,19 +168,31 @@ section {
   background: #F3F3F3; }
   #how-we-work::before {
     content: "";
-    position: absolute;
+    position: relative;
     top: 0;
-    bottom: 0;
+    bottom: auto;
     left: 0;
-    right: 50%;
-    display: none;
+    right: 0;
+    margin-top: -10rem;
+    margin-bottom: 5rem;
+    height: 100vh;
+    max-height: 60vw;
+    display: block;
     background-image: url("../img/bg_how_we_do_it.png");
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center 30%;
     background-size: cover; }
     @media (min-width: 550px) {
       #how-we-work::before {
-        display: block; } }
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 50%;
+        margin-top: 0;
+        margin-bottom: 0;
+        height: auto;
+        max-height: 100%; } }
   #how-we-work h2 {
     margin-bottom: 5rem; }
   #how-we-work p {
@@ -181,3 +203,5 @@ section {
 #join-us .column .content {
   padding-top: 2.5rem;
   padding-bottom: 2.5rem; }
+
+/*# sourceMappingURL=index.css.map */

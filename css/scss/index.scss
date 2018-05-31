@@ -3,12 +3,13 @@
 // Index Page Style
 // -----------------------------------------------------------------------------
 
+$section-padding: 10rem;
 section {
   // Position
   position: relative;
   // Size
-  padding-top: 10rem;
-  padding-bottom: 10rem;
+  padding-top: $section-padding;
+  padding-bottom: $section-padding;
 }
 
 .section-header {
@@ -48,18 +49,33 @@ section {
   &::before {
     content: "";
     // Position
-    position: absolute;
+    position: relative;
     top: 0;
-    bottom: 0;
-    left: 50%;
+    bottom: auto;
+    left: 0;
     right: 0;
+    margin-top: -$section-padding;
+    margin-bottom: $section-padding/2;
+    height: 100vh;
+    max-height: 60vw;
+    // On desktop display to the right instead of the top
+    @media (min-width: 550px) { 
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      right: 0;
+      margin-top: 0;
+      margin-bottom: 0;
+      height: auto;
+      max-height: 100%;
+    }
     // Display
-    display: none;
-    @media (min-width: 550px) { display: block; }
+    display: block;
     // Appearance
     background-image: url('../img/bg_what_we_do.png');
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center 30%;
     background-size: cover;
   }
 
@@ -93,21 +109,37 @@ section {
   // Appearance
   background: $light-background-color;
   // Children
+
   &::before {
     content: "";
     // Position
-    position: absolute;
+    position: relative;
     top: 0;
-    bottom: 0;
+    bottom: auto;
     left: 0;
-    right: 50%;
+    right: 0;
+    margin-top: -$section-padding;
+    margin-bottom: $section-padding/2;
+    height: 100vh;
+    max-height: 60vw;
+    // On desktop display to the right instead of the top
+    @media (min-width: 550px) { 
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 50%;
+      margin-top: 0;
+      margin-bottom: 0;
+      height: auto;
+      max-height: 100%;
+    }
     // Display
-    display: none;
-    @media (min-width: 550px) { display: block; }
+    display: block;
     // Appearance
     background-image: url('../img/bg_how_we_do_it.png');
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center 30%;
     background-size: cover;
   }
 
