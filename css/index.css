@@ -105,7 +105,7 @@ section {
 #introduction {
   background-image: url("../img/bg_what_if.png");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: 75% center;
   background-size: cover;
   color: #DDD; }
   #introduction::before {
@@ -116,7 +116,7 @@ section {
     left: 0;
     right: 0;
     background-color: #000;
-    opacity: 0.6; }
+    opacity: 0.75; }
 
 #what-we-do {
   background: #F3F3F3; }
