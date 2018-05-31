@@ -134,7 +134,7 @@ section {
     display: block;
     background-image: url("../img/bg_what_we_do.png");
     background-repeat: no-repeat;
-    background-position: center 30%;
+    background-position: 70% 30%;
     background-size: cover; }
     @media (min-width: 550px) {
       #what-we-do::before {
@@ -180,7 +180,7 @@ section {
     display: block;
     background-image: url("../img/bg_how_we_do_it.png");
     background-repeat: no-repeat;
-    background-position: center 30%;
+    background-position: 15% 30%;
     background-size: cover; }
     @media (min-width: 550px) {
       #how-we-work::before {
