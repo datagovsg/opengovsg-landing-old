@@ -3,11 +3,13 @@ body {
   color: #333;
   font-size: 18px;
   font-weight: 400;
-  font-family: "Nunito", sans-serif; }
+  font-family: "Lato", sans-serif; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 500; }
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  letter-spacing: normal;
+}
 
 h3 {
   font-size: 2.5rem; }
@@ -51,8 +53,8 @@ header {
   -moz-box-shadow: 0px 2px 14px -2px rgba(0, 0, 0, 0.3);
   box-shadow: 0px 2px 14px -2px rgba(0, 0, 0, 0.3); }
   header img {
-    margin: 30px 0;
-    height: 45px; }
+    margin: 15px 0 5px;
+    height: 65px; }
 
 footer {
   background-color: #F3F3F3;
@@ -85,13 +87,6 @@ footer {
 
 #logo {
   margin: 2.5rem 0; }
-  #logo a {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 500;
-    color: #000;
-    text-decoration: none;
-    font-size: 2.8rem;
-    line-height: 2.5rem; }
 
 section {
   position: relative;
@@ -119,7 +114,8 @@ section {
     opacity: 0.75; }
 
 #what-we-do {
-  background: #F3F3F3; }
+  background: #276ef1;
+  color: #FFFFFF;}
   #what-we-do::before {
     content: "";
     position: relative;
@@ -165,7 +161,8 @@ section {
   float: right; }
 
 #how-we-work {
-  background: #F3F3F3; }
+  background: #000000;
+  color: #FFFFFF;}
   #how-we-work::before {
     content: "";
     position: relative;
